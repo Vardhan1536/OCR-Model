@@ -176,7 +176,7 @@ We are integrating a *RAG (Retrieval-Augmented Generation)* model to convert uns
 
 This is the *UI design concept* for our OCR model-based web platform, created using *Figma. The platform serves two distinct user types: **Normal Users* and *Organizations*, each with tailored functionalities. Below is a detailed description of the user interface and features for both types of users:
 ## *Figma Link*
-[Access the Figma Design Here](#) <!-- Replace with actual link -->
+[Access the Figma Design Here](https://www.figma.com/design/Br285x2rsCXaeLzE2XmMOs/OCR_Model?node-id=0-1&t=OZkE2vxdM2a9WogR-1) <!-- Replace with actual link -->
 
 ---
 
