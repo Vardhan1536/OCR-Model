@@ -21,19 +21,20 @@ This repository contains the code for a *GENAI-based project* featuring a user i
 
 ## *Project Structure*
 
-optimuz/ │<br>
+optimuz/ │ <br>
 ├── compressed_image/ # Contains compressed images used for testing after resizing.<br>
 ├── processed_image/ # Stores processed images ready for OCR extraction.<br>
 ├── processed_json/ # Contains the output JSON files generated from the OCR model.<br>
-├── chatbot.ipynb # Jupyter notebook implementing the chatbot logic for data queries.<br>
+├── chatbot.ipynb # Jupyter notebook implementing the chatbot logic for data queries. <br>
 ├── convertor.ipynb # Script to convert various output formats like JSON to CSV/XLS. <br>
-├── image4K.ipynb # Notebook to resize and compress large images to 4K resolution.<br>
-└── model.ipynb # Main OCR model implementation using PaddleOCR.<br>
+├── image4K.ipynb # Notebook to resize and compress large images to 4K resolution. <br>
+└── model.ipynb # Main OCR model implementation using PaddleOCR. <br>
 
-web/ │ <br>
-├── app.py # Main web application script built using Streamlit. <br>
-├── hackathon1.py # Additional backend logic specific to the hackathon requirements.<br>
+web/ │<br>
+├── app.py # Main web application script built using Streamlit.<br> 
+├── hackathon1.py # Additional backend logic specific to the hackathon requirements. <br>
 └── students_results.json # Sample JSON file with student data for testing and demo purposes.<br>
+
 
 ---
 
@@ -125,19 +126,7 @@ We are expanding the chatbot functionality by integrating *RAG (Retrieval-Augmen
 #### *2. Creating a Training Dataset:*
 - Since there is no pre-existing, structured dataset for
   ```
-
-
-## *App.js - Prototype Overview*
-
-The *App.js* is the user interface prototype for our project, hosted on *Streamlit*. It allows users to interact with the OCR model and chatbot. Key features include:
-
-- *Image Upload*: Users can upload marklist image files.
-- *JSON Preview & Download*: The app generates a JSON file from the image data, previews it, and allows users to download it.
-- *Chatbot Interaction*: Users can chat with the bot to ask questions and resolve queries.
-- *JSON Conversion*: The app provides options to convert the JSON file to Excel or CSV format.
-- *API Key Generation*: Users can generate an API key to access the model programmatically.
   ## *Structured Marklist Integration with RAG Model*
-
 
 We are integrating a *RAG (Retrieval-Augmented Generation)* model to convert unstructured student marklist images into a structured format. Here's the process:
 
@@ -153,3 +142,63 @@ We are integrating a *RAG (Retrieval-Augmented Generation)* model to convert uns
 ### *3. Chatbot Integration:*
 - Once trained, the *RAG model* will be integrated into our chatbot, enabling it to provide accurate, structured responses based on user queries.
 
+
+
+## *App.js - Prototype Overview*
+
+The *App.js* is the user interface prototype for our project, hosted on *Streamlit*. It allows users to interact with the OCR model and chatbot. Key features include:
+
+- *Image Upload*: Users can upload marklist image files.
+- *JSON Preview & Download*: The app generates a JSON file from the image data, previews it, and allows users to download it.
+- *Chatbot Interaction*: Users can chat with the bot to ask questions and resolve queries.
+- *JSON Conversion*: The app provides options to convert the JSON file to Excel or CSV format.
+- *API Key Generation*: Users can generate an API key to access the model programmatically.
+
+- ## *FURTHER UPDATES FOR OUR MODEL*
+
+We are integrating a *RAG (Retrieval-Augmented Generation)* model to convert unstructured student marklist images into a structured format. Here's the process:
+
+---
+
+### *1. Dataset Creation:*
+- Using *OCR*, unstructured data is extracted from university marklist images.
+- Structured data is obtained from the university's marks database.
+
+### *2. Model Training:*
+- The *RAG model* is trained on this data to learn the conversion from unstructured to structured format.
+
+### *3. Chatbot Integration:*
+- Once trained, the *RAG model* will be integrated into our chatbot, enabling it to provide accurate, structured responses based on user queries.
+
+---
+
+## *UI Design Overview for OCR Web Application*
+
+This is the *UI design concept* for our OCR model-based web platform, created using *Figma. The platform serves two distinct user types: **Normal Users* and *Organizations*, each with tailored functionalities. Below is a detailed description of the user interface and features for both types of users:
+## *Figma Link*
+[Access the Figma Design Here](#) <!-- Replace with actual link -->
+
+---
+
+### *Normal Users*
+*Features:*
+- *Upload report card images* and convert them into multiple formats such as *JSON, **CSV, or **XLS*.
+- *API Key Access*: After signing in, users can generate their own API key to integrate the OCR model into their own projects or workflows.
+- *User-Friendly Interface*: A simple interface designed to ensure ease of use and smooth functionality.
+
+---
+
+### *Organizations*
+*Additional Features:*
+- Access to all functionalities available to normal users, such as image upload, file conversion, and API key generation.
+- *Structured Data Management*: Organized branch-wise and class-wise data views, making it easy for organizations to:
+  - Append new data to existing records.
+  - Access previous reports quickly.
+  - Handle large student datasets efficiently.
+
+This feature is especially useful for institutions like *RGUKT*, where report card management needs to be scalable and structured.
+
+---
+
+### *Design Goal*
+The UI design focuses on *simplicity, **efficiency, and **usability* for both individual users and large organizations. With two separate user flows, the platform offers a personalized experience, ensuring that both students and institutions can benefit from the OCR model seamlessly.
