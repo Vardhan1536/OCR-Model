@@ -2,6 +2,7 @@
 
 This repository contains the code for a *GENAI-based project* featuring a user interface with various accessibility options. The project integrates *PaddleOCR* for Optical Character Recognition (OCR) and the *GEMINI AI chatbot* for enhanced user interaction.
 
+Demo of our Website: (https://drive.google.com/file/d/14M0tdOSUE9SQSAjlpCKiSHbfJpdtaGyG/view?usp=drivesdk)
 ---
 
 ## *Table of Contents*
