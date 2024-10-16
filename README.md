@@ -21,8 +21,19 @@ This repository contains the code for a *GENAI-based project* featuring a user i
 
 ## *Project Structure*
 
-optimuz/ │ ├── compressed_image/ # Contains compressed images used for testing after resizing. ├── processed_image/ # Stores processed images ready for OCR extraction. ├── processed_json/ # Contains the output JSON files generated from the OCR model. ├── chatbot.ipynb # Jupyter notebook implementing the chatbot logic for data queries. ├── convertor.ipynb # Script to convert various output formats like JSON to CSV/XLS. ├── image4K.ipynb # Notebook to resize and compress large images to 4K resolution. └── model.ipynb # Main OCR model implementation using PaddleOCR. web/ │ ├── app.py # Main web application script built using Streamlit. ├── hackathon1.py # Additional backend logic specific to the hackathon requirements. └── students_results.json # Sample JSON file with student data for testing and demo purposes.
+optimuz/ │
+├── compressed_image/ # Contains compressed images used for testing after resizing.
+├── processed_image/ # Stores processed images ready for OCR extraction.
+├── processed_json/ # Contains the output JSON files generated from the OCR model.
+├── chatbot.ipynb # Jupyter notebook implementing the chatbot logic for data queries.
+├── convertor.ipynb # Script to convert various output formats like JSON to CSV/XLS. 
+├── image4K.ipynb # Notebook to resize and compress large images to 4K resolution.
+└── model.ipynb # Main OCR model implementation using PaddleOCR.
 
+web/ │ 
+├── app.py # Main web application script built using Streamlit. 
+├── hackathon1.py # Additional backend logic specific to the hackathon requirements.
+└── students_results.json # Sample JSON file with student data for testing and demo purposes.
 
 ---
 
